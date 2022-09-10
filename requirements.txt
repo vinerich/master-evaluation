@@ -1,0 +1,6 @@
+argparse
+numpy
+pytablewriter
+seaborn
+matplotlib
+scipy
