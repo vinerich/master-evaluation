@@ -41,3 +41,5 @@ python -u plot.py -f logs/ --env zinc-coating-v0 -a dats-delay-0 dats-delay-1 da
 python -u plot.py -f logs/ --env zinc-coating-v0 -a dats-delay-0 dats-delay-1 dats-delay-5 dats-delay-10 dats-delay-20 -o dats-all-20 --no-display
 python -u plot.py -f logs/ --env zinc-coating-v0 -a sac-delay-0 dats-delay-0 dats-delay-1 dats-delay-5 dats-delay-10 dats-delay-20 dats-delay-100-gpu -o dats-all-100-baseline --no-display
 python -u plot.py -f logs/ --env zinc-coating-v0 -a sac-delay-0 dats-delay-0 dats-delay-1 dats-delay-5 dats-delay-10 dats-delay-20 -o dats-all-20-baseline --no-display
+
+python -u plot.py -f logs/ --env zinc-coating-v0 -a dats-delay-0 -o dats-single-0 --no-display

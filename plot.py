@@ -47,11 +47,10 @@ if args.labels is None:
 
 for env in args.env:  # noqa: C901
     plt.figure(f"Results {env}")
-    plt.title(f"{env}", fontsize=14)
 
-    x_label_suffix = "" if args.no_million else "(in Million)"
-    plt.xlabel(f"Timesteps {x_label_suffix}", fontsize=14)
-    plt.ylabel("Score", fontsize=14)
+    x_label_suffix = "" if args.no_million else "(in Millionen)"
+    plt.xlabel(f"Zeitschritte {x_label_suffix}", fontsize=14)
+    plt.ylabel("Belohnung", fontsize=14)
     results[env] = {}
     post_processed_results[env] = {}
 
@@ -211,7 +210,7 @@ for env in args.env:  # noqa: C901
                     "mean_per_eval": mean_per_eval,
                 }
 
-                plt.plot(timesteps / divider, mean_, label=f"{algo}-{args.labels[folder_idx]}", linewidth=3)
+                plt.plot(timesteps / divider, mean_, label=f"{algo}", linewidth=3)
                 plt.fill_between(timesteps / divider, max_, min_, alpha=0.5)
 
     plt.legend()
