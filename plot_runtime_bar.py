@@ -253,7 +253,7 @@ for i, env in enumerate(args.env, start=1):
             value_matrix[i].append(f'{results[env].get(key, "0.0 +/- 0.0")}')
 
     y_pos = np.arange(len(keys))
-    values = list(map(lambda x: float(x.split(" ")[0]),value_matrix[i][1:]))
+    values = list(map(lambda x: float(x.split(" ")[0]) / 60,value_matrix[i][1:]))
 
     X, Y = zip(*sorted(zip(keys, values), key=lambda pair: pair[1]))
 

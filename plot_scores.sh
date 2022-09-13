@@ -43,3 +43,22 @@ python -u plot.py -f logs/ --env zinc-coating-v0 -a sac-delay-0 dats-delay-0 dat
 python -u plot.py -f logs/ --env zinc-coating-v0 -a sac-delay-0 dats-delay-0 dats-delay-1 dats-delay-5 dats-delay-10 dats-delay-20 -o dats-all-20-baseline --no-display
 
 python -u plot.py -f logs/ --env zinc-coating-v0 -a dats-delay-0 -o dats-single-0 --no-display
+python -u plot.py -f logs/ --env zinc-coating-v0 -a dats-delay-1 -o dats-single-1 --no-display
+python -u plot.py -f logs/ --env zinc-coating-v0 -a dats-delay-5 -o dats-single-5 --no-display
+python -u plot.py -f logs/ --env zinc-coating-v0 -a dats-delay-10 -o dats-single-10 --no-display
+python -u plot.py -f logs/ --env zinc-coating-v0 -a dats-delay-20 -o dats-single-20 --no-display
+python -u plot.py -f logs/ --env zinc-coating-v0 -a dats-delay-100 -o dats-single-100 --no-display
+
+python -u plot.py -f logs/ --env zinc-coating-v0 -a sac-is-delay-0 -o sac-single-0 --no-display
+python -u plot.py -f logs/ --env zinc-coating-v0 -a sac-is-delay-1 -o sac-single-1 --no-display
+python -u plot.py -f logs/ --env zinc-coating-v0 -a sac-is-delay-5 -o sac-single-5 --no-display
+python -u plot.py -f logs/ --env zinc-coating-v0 -a sac-is-delay-10 -o sac-single-10 --no-display
+python -u plot.py -f logs/ --env zinc-coating-v0 -a sac-is-delay-20 -o sac-single-20 --no-display
+python -u plot.py -f logs/ --env zinc-coating-v0 -a sac-is-delay-100 -o sac-single-100 --no-display
+
+python -u plot.py -f logs/ --env zinc-coating-v0 -a dcac-delay-0 -o dcac-single-0 --no-display
+python -u plot.py -f logs/ --env zinc-coating-v0 -a dcac-delay-1 -o dcac-single-1 --no-display
+python -u plot.py -f logs/ --env zinc-coating-v0 -a dcac-delay-5 -o dcac-single-5 --no-display
+python -u plot.py -f logs/ --env zinc-coating-v0 -a dcac-delay-10 -o dcac-single-10 --no-display
+python -u plot.py -f logs/ --env zinc-coating-v0 -a dcac-delay-20 -o dcac-single-20 --no-display
+python -u plot.py -f logs/ --env zinc-coating-v0 -a dcac-delay-100 -o dcac-single-100 --no-display

@@ -51,7 +51,7 @@ for env in args.env:  # noqa: C901
 
     x_label_suffix = "" if args.no_million else "(in Millionen)"
     plt.xlabel(f"Zeitschritte {x_label_suffix}", fontsize=14)
-    plt.ylabel("Trainingszeit (in Minuten)", fontsize=14)
+    plt.ylabel("Trainingszeit (in Sekunden)", fontsize=14)
     results[env] = {}
     post_processed_results[env] = {}
 
